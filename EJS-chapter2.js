@@ -14,18 +14,20 @@ do {
 
 // FizzBuzz
 var mod3, mod5;
+var result;
 for (var i = 1; i <= 100; i++){
 	mod3 = i % 3;
 	mod5 = i % 5;
 	if(!mod3 && !mod5){
-		console.log("FizzBuzz");
+		result = "FizzBuzz";
 	} else if (!mod3){
-		console.log("Fizz");
+		result = "Fizz";
 	} else if (!mod5){
-		console.log("Buzz");
+		restult = "Buzz";
 	} else {
-		console.log(i);
+		result = i;
 	}
+	console.log(result);
 }
 
 // Chessboard
